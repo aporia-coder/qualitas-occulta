@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "lintfix": "next lint --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "tsc-check": "tsc --noEmit",
+    "tsc-watch": "tsc --noEmit --watch"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
