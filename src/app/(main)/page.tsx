@@ -20,7 +20,11 @@ export default function Home() {
   return (
     <ul>
       {mainLinks.map(({ title }) => (
-        <h1>{title}</h1>
+        <li>
+          <h1 className="uppercase text-3xl font-semibold" key={title}>
+            {title}
+          </h1>
+        </li>
       ))}
     </ul>
   )
