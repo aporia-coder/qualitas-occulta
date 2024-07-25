@@ -22,8 +22,13 @@ body,
   }
 }
 
+canvas {
+  width: 1000px !important;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
+  font-family: Arial, Helvetica, sans-serif;
   background: linear-gradient(
       to bottom,
       transparent,
