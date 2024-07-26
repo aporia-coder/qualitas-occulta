@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import './globals.css'
 import { ReactNode } from 'react'
 import { Cursor } from '@/components/Cursor'
+import { TextScroller } from '@/components/TextScroller'
 
 export const metadata: Metadata = {
   title: '∴aporia∴',
@@ -23,7 +24,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={oldLondon.variable}>
         <Cursor />
-        <main className="bg-zinc-900 text-gray-200 h-full">{children}</main>
+        <main className="bg-zinc-900 text-gray-200 h-full">
+          <TextScroller direction={1} />
+          {children}
+          <TextScroller direction={-1} className="bottom-0" />
+        </main>
       </body>
     </html>
   )

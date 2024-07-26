@@ -32,7 +32,6 @@ export default function Home() {
 
   return (
     <div className="h-full overflow-y-hidden">
-      <TextScroller direction={-1} />
       <div className="flex justify-between items-center px-8 h-full">
         <ul>
           {mainLinks.map(({ title }) => (
@@ -48,7 +47,6 @@ export default function Home() {
         </ul>
         <CanvasWrapper animation={reveal} model={<SaintTeresa />} />
       </div>
-      <TextScroller direction={-1} className="bottom-0" />
     </div>
   )
 }
