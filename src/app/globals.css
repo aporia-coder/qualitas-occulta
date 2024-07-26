@@ -6,9 +6,15 @@ html,
 body,
 :root {
   height: 100%;
+  cursor: none;
+}
+
+* {
+  cursor: none;
 }
 
 :root {
+  cursor: none;
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
