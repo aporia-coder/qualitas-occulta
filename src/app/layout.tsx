@@ -2,6 +2,7 @@ import localFont from 'next/font/local'
 import type { Metadata } from 'next'
 import './globals.css'
 import { ReactNode } from 'react'
+import { Cursor } from '@/components/Cursor'
 
 export const metadata: Metadata = {
   title: '∴aporia∴',
@@ -21,6 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={oldLondon.variable}>
+        <Cursor />
         <main className="bg-zinc-900 text-gray-200 h-full">{children}</main>
       </body>
     </html>
