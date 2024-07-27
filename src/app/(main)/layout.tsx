@@ -18,7 +18,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
         <motion.div
           initial="visible"
           animate="hidden"
-          variants={fadeOut(5)}
+          variants={fadeOut(1)}
           onAnimationComplete={() => setLoaded(true)}
           className="h-full overflow-y-hidden flex justify-center items-center"
         >

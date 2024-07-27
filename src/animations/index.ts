@@ -4,12 +4,14 @@ export const fadeOut = (delay: number): Variants => {
   return {
     hidden: {
       opacity: 0,
+      transition: {
+        delay,
+      },
     },
     visible: {
       opacity: 1,
       transition: {
         ease: 'easeOut',
-        delay,
       },
     },
   }

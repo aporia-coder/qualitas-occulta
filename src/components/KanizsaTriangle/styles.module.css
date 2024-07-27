@@ -9,6 +9,7 @@
 
 .kanizsa > * {
   transition: transform 1.5s;
+  transition-delay: 0.5s;
 }
 
 div.top {

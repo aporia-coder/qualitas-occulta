@@ -13,6 +13,7 @@ export const KanizsaTriangle = () => {
       )
 
       elements.forEach((element) => {
+        // @ts-ignore
         element.style.transform = 'rotate(180deg)'
       })
     }
