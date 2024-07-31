@@ -14,7 +14,7 @@ export default function Home() {
     },
     {
       title: 'video',
-      link: '',
+      link: '/video',
     },
     {
       title: 'software',
@@ -34,10 +34,10 @@ export default function Home() {
     <div className="h-full overflow-y-hidden">
       <div className="flex justify-between items-center px-8 h-full">
         <ul>
-          {mainLinks.map(({ title }) => (
+          {mainLinks.map(({ title, link }) => (
             <li>
               <TitleLink
-                href=""
+                href={link}
                 label={title}
                 characterAnimation={characterAnimation}
                 wordAnimation={wordAnim}

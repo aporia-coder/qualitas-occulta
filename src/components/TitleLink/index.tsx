@@ -9,7 +9,7 @@ export const TitleLink = ({
   characterAnimation,
 }: TitleLinkProps) => {
   return (
-    <Link href="">
+    <Link href={href}>
       <motion.h1
         className="text-6xl font-extralight font-oldLondon text-zinc-300 hover:text-white transition flex justify-center"
         role="heading"
