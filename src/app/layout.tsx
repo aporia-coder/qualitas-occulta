@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={oldLondon.variable}>
         <Cursor />
-        <main className="bg-zinc-900 text-gray-200 h-full">{children}</main>
+        <main className="bg-zinc-900 text-gray-200 min-h-full">{children}</main>
       </body>
     </html>
   )

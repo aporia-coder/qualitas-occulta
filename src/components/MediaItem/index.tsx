@@ -1,10 +1,11 @@
 import ReactPlayer from 'react-player'
 import { MediaItemProps } from './types'
+import { MediaItemTitle } from '../MediaItemTitle'
 
 export const MediaItem = ({ url, title }: MediaItemProps) => {
   return (
-    <div>
-      <h1 className="text-3xl py-3">{title}</h1>
+    <div className="flex flex-col gap-6">
+      <MediaItemTitle>{title}</MediaItemTitle>
       <ReactPlayer url={url} />
     </div>
   )

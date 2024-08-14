@@ -10,7 +10,7 @@ export default function Home() {
   const mainLinks = [
     {
       title: 'music',
-      link: '',
+      link: '/music',
     },
     {
       title: 'video',
@@ -22,7 +22,7 @@ export default function Home() {
     },
     {
       title: 'blog',
-      link: '',
+      link: '/blog',
     },
     {
       title: 'contact',
@@ -31,7 +31,7 @@ export default function Home() {
   ]
 
   return (
-    <div className="h-full overflow-y-hidden">
+    <div className="h-screen overflow-y-hidden">
       <div className="flex justify-between items-center px-8 h-full">
         <ul>
           {mainLinks.map(({ title, link }) => (
