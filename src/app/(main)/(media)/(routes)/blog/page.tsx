@@ -7,7 +7,11 @@ const BlogPage = () => {
   return (
     <>
       <MediaPageTitle>Blog</MediaPageTitle>
-      <BlogItem title="The Death Drive" body={blogPosts[0].body} />
+      <div className="flex flex-col justify-start gap-20">
+        {blogPosts.map((post) => (
+          <BlogItem title={post.title} body={post.body} key={post.title} />
+        ))}
+      </div>
     </>
   )
 }
