@@ -7,7 +7,7 @@ export const Cursor = () => {
   return (
     <div
       ref={cursorRef}
-      className="overflow-hidden pointer-events-none fixed h-4 w-4 rounded-full bg-white z-50 mix-blend-difference"
+      className="overflow-hidden hidden md:block pointer-events-none fixed h-4 w-4 rounded-full bg-white z-50 mix-blend-difference"
     />
   )
 }
