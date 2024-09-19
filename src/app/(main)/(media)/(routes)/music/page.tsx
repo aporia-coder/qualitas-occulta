@@ -8,11 +8,11 @@ export default function MusicPage() {
   return (
     <>
       <MediaPageTitle>Music</MediaPageTitle>
-      <div className="flex flex-col justify-start gap-20">
+      <section className="flex flex-col justify-start gap-20">
         {musicData.map((item) => (
           <MediaItem title={item.title} url={item.url} />
         ))}
-      </div>
+      </section>
     </>
   )
 }
