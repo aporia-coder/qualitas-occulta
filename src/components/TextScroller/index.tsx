@@ -15,7 +15,7 @@ export const TextScroller = ({
     <div className={cn(className, 'fixed')}>
       <Ticker duration={duration} direction={direction}>
         {items.map((item) => {
-          return <ScrollerItem item={item} />
+          return <ScrollerItem item={item} key={item} />
         })}
       </Ticker>
     </div>

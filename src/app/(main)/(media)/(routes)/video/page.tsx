@@ -8,12 +8,10 @@ const VideoPage = () => {
   return (
     <>
       <MediaPageTitle>Video</MediaPageTitle>
-      <section className="flex items-center h-full px-8">
-        <div className="flex flex-col justify-start gap-20">
-          {videos.map((video) => (
-            <MediaItem title={video.title} url={video.url} />
-          ))}
-        </div>
+      <section className="flex flex-col justify-start gap-20">
+        {videos.map((video) => (
+          <MediaItem title={video.title} url={video.url} />
+        ))}
       </section>
     </>
   )
