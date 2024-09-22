@@ -1,3 +1,4 @@
+import { usePathname, useRouter } from 'next/navigation'
 import { useEffect, useRef } from 'react'
 
 export const useCursor = () => {
@@ -19,4 +20,10 @@ export const useCursor = () => {
   }, [])
 
   return cursorRef
+}
+
+export const useIsOnHomepage = () => {
+  const pathname = usePathname()
+
+  return pathname === '/'
 }
