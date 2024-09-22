@@ -2,6 +2,7 @@
 
 import { characterAnimation, reveal, wordAnim } from '@/animations'
 import { CanvasWrapper } from '@/components/CanvasWrapper'
+import { Navbar } from '@/components/Navbar'
 import { SaintTeresa } from '@/components/SaintTeresa'
 import { TextScroller } from '@/components/TextScroller'
 import { TitleLink } from '@/components/TitleLink'
