@@ -1,3 +1,4 @@
+import { AnchorTarget } from '@/globals/types'
 import { Variants } from 'framer-motion'
 
 export interface TitleLinkProps {
@@ -5,4 +6,5 @@ export interface TitleLinkProps {
   href: string
   wordAnimation: Variants
   characterAnimation: Variants
+  target?: AnchorTarget
 }
