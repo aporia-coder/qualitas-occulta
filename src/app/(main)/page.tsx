@@ -2,10 +2,9 @@
 
 import { characterAnimation, reveal, wordAnim } from '@/animations'
 import { CanvasWrapper } from '@/components/CanvasWrapper'
-import { Navbar } from '@/components/Navbar'
 import { SaintTeresa } from '@/components/SaintTeresa'
-import { TextScroller } from '@/components/TextScroller'
 import { TitleLink } from '@/components/TitleLink'
+import { AnchorTarget } from '@/globals/types'
 
 export default function Home() {
   const mainLinks = [
@@ -27,7 +26,8 @@ export default function Home() {
     },
     {
       title: 'contact',
-      link: '',
+      link: 'http://www.termina11y.online/',
+      target: AnchorTarget.BLANK,
     },
   ]
 
@@ -35,13 +35,14 @@ export default function Home() {
     <div className="h-screen overflow-y-hidden">
       <div className="flex justify-between items-center px-8 h-full">
         <ul>
-          {mainLinks.map(({ title, link }) => (
-            <li>
+          {mainLinks.map(({ title, link, target }) => (
+            <li key={title}>
               <TitleLink
                 href={link}
                 label={title}
                 characterAnimation={characterAnimation}
                 wordAnimation={wordAnim}
+                target={target}
               />
             </li>
           ))}

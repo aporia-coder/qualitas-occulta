@@ -1,15 +1,17 @@
-import { motion, stagger, useAnimation, Variants } from 'framer-motion'
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { TitleLinkProps } from './types'
+import { AnchorTarget } from '@/globals/types'
 
 export const TitleLink = ({
   label,
   href,
   wordAnimation,
   characterAnimation,
+  target = AnchorTarget.SELF,
 }: TitleLinkProps) => {
   return (
-    <Link href={href}>
+    <Link href={href} target={target}>
       <motion.h1
         className="text-6xl font-extralight font-oldLondon text-zinc-300 hover:text-white transition flex justify-center"
         role="heading"
