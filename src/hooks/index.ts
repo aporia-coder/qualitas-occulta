@@ -1,4 +1,4 @@
-import { usePathname, useRouter } from 'next/navigation'
+import { usePathname } from 'next/navigation'
 import { useEffect, useRef } from 'react'
 
 export const useCursor = () => {

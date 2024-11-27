@@ -1,8 +1,6 @@
 import { BlogItem } from '@/components/BlogItem'
-import { MediaPageTitle } from '@/components/MediaPageTitle'
-import { TitleLink } from '@/components/TitleLink'
-import { getBlogPosts } from './actions'
 import { Navbar } from '@/components/Navbar'
+import { getBlogPosts } from './actions'
 
 const BlogPage = async () => {
   const blogPosts = await getBlogPosts()
