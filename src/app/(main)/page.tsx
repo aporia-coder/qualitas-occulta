@@ -18,7 +18,8 @@ export default function Home() {
     },
     {
       title: 'software',
-      link: '',
+      link: 'https://github.com/aporia-coder',
+      target: AnchorTarget.BLANK,
     },
     {
       title: 'blog',
