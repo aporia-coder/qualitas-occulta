@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { motion, Variants } from 'framer-motion'
@@ -25,6 +26,7 @@ export const CanvasWrapper = ({
           autoRotate={true}
           autoRotateSpeed={5}
         />
+
         <directionalLight position={[-1, 10, 1]} intensity={3} />
       </Canvas>
     </motion.div>

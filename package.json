@@ -10,7 +10,9 @@
     "lintfix": "next lint --fix",
     "prepare": "husky",
     "tsc-check": "tsc --noEmit",
-    "tsc-watch": "tsc --noEmit --watch"
+    "tsc-watch": "tsc --noEmit --watch",
+    "format": "prettier --write './src/**/*.{js,jsx,ts,tsx}' --config ./.prettierrc",
+    "supabase": "gen types typescript --project-id ofqrkzxetjfnqvcempsm > database.types.ts"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
@@ -18,9 +20,9 @@
   "dependencies": {
     "@react-three/drei": "^9.108.4",
     "@react-three/fiber": "^8.16.8",
+    "@supabase/supabase-js": "^2.47.10",
     "@types/three": "^0.166.0",
     "clsx": "^2.1.1",
-    "contentful": "^10.15.0",
     "framer-motion": "^11.3.4",
     "framer-motion-ticker": "^1.0.19",
     "lucide-react": "^0.441.0",
@@ -34,9 +36,9 @@
     "three": "^0.166.1"
   },
   "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
+    "@types/node": "^22.10.1",
+    "@types/react": "^19.0.1",
+    "@types/react-dom": "^19.0.2",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
     "@typescript-eslint/parser": "^7.0.0",
     "eslint": "^8",
@@ -49,7 +51,7 @@
     "postcss": "^8",
     "prettier": "^3.3.3",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5.7.2"
   },
   "packageManager": "yarn@4.3.0"
 }

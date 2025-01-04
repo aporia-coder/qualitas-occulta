@@ -1,18 +1,16 @@
 import { BlogItem } from '@/components/BlogItem'
 import { Navbar } from '@/components/Navbar'
-import { getBlogPosts } from './actions'
+import { supabase } from '../../../../../lib/supabaseApi'
 
 const BlogPage = async () => {
-  const blogPosts = await getBlogPosts()
+  const { data: blogPosts } = await supabase.from('BlogPost').select('*')
 
   return (
     <>
       <Navbar title="Blog" />
       <section className="flex flex-col justify-start gap-20">
         {blogPosts?.map((post) => {
-          return (
-            <BlogItem title={post.title} body={post.body} key={post.title} />
-          )
+          return <BlogItem title={post.title} body={post.body} key={post.id} />
         })}
       </section>
     </>

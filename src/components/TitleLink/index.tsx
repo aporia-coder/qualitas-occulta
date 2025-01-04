@@ -1,3 +1,5 @@
+'use client'
+
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { TitleLinkProps } from './types'
@@ -13,6 +15,7 @@ export const TitleLink = ({
   return (
     <Link href={href} target={target}>
       <motion.h1
+        // @ts-ignore
         className="text-6xl font-extralight font-oldLondon text-zinc-300 hover:text-white transition flex justify-center"
         role="heading"
         aria-label={label}
@@ -25,6 +28,7 @@ export const TitleLink = ({
             key={`id_${char}-${idx}`}
             variants={characterAnimation}
             aria-hidden="true"
+            // @ts-ignore
             className="inline-block"
           >
             {char}

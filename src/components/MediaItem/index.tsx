@@ -5,7 +5,7 @@ import { MediaItemTitle } from '../MediaItemTitle'
 export const MediaItem = ({ url, title }: MediaItemProps) => {
   return (
     <div className="flex flex-col gap-6">
-      <MediaItemTitle>{title}</MediaItemTitle>
+      <MediaItemTitle title={title} />
       <div>
         <ReactPlayer
           url={url}

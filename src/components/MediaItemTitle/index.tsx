@@ -1,7 +1,7 @@
-export const MediaItemTitle = ({ children }: { children: string }) => {
+export const MediaItemTitle = ({ title }: { title: string }) => {
   return (
     <h1 className="uppercase text-4xl md:text-6xl tracking-widest text-zinc-400">
-      {children}
+      {title}
     </h1>
   )
 }

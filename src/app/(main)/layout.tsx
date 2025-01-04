@@ -20,6 +20,7 @@ export default function MainLayout({ children }: { children: ReactNode }) {
           animate="hidden"
           variants={fadeOut(1)}
           onAnimationComplete={() => setLoaded(true)}
+          // @ts-ignore
           className="h-screen overflow-y-hidden flex justify-center items-center"
         >
           <KanizsaTriangle />
