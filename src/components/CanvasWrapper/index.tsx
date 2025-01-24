@@ -13,7 +13,7 @@ export const CanvasWrapper = ({
 }) => {
   return (
     <motion.div
-      className="h-full basis-96"
+      className="hidden md:block h-full basis-96"
       variants={animation}
       initial="hidden"
       animate="visible"
