@@ -12,8 +12,8 @@ export default function MusicPage() {
       <Navbar title="Music" />
       <section className="flex flex-col justify-start gap-20">
         {musicData.map((item) => (
-          <Suspense fallback={<Loader />}>
-            <MediaItem title={item.title} url={item.url} key={item.url} />
+          <Suspense fallback={<Loader />} key={item.url}>
+            <MediaItem title={item.title} url={item.url} />
           </Suspense>
         ))}
       </section>
