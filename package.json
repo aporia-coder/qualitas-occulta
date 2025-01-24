@@ -12,7 +12,7 @@
     "tsc-check": "tsc --noEmit",
     "tsc-watch": "tsc --noEmit --watch",
     "format": "prettier --write './src/**/*.{js,jsx,ts,tsx}' --config ./.prettierrc",
-    "supabase": "gen types typescript --project-id ofqrkzxetjfnqvcempsm > database.types.ts"
+    "supabase": "supabase gen types typescript --project-id ofqrkzxetjfnqvcempsm > database.types.ts"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
@@ -22,17 +22,20 @@
     "@react-three/fiber": "^8.16.8",
     "@supabase/supabase-js": "^2.47.10",
     "@types/three": "^0.166.0",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.4",
     "framer-motion-ticker": "^1.0.19",
-    "lucide-react": "^0.441.0",
+    "lucide-react": "^0.474.0",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.13.0",
     "react-markdown": "^9.0.1",
     "react-player": "^2.16.0",
-    "tailwind-merge": "^2.4.0",
+    "supabase": "2.6.8",
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7",
     "three": "^0.166.1"
   },
   "devDependencies": {

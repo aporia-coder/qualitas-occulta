@@ -3,7 +3,10 @@ import { Navbar } from '@/components/Navbar'
 import { supabase } from '../../../../../lib/supabaseApi'
 
 const BlogPage = async () => {
-  const { data: blogPosts } = await supabase.from('BlogPost').select('*')
+  const { data: blogPosts } = await supabase
+    .from('BlogPost')
+    .select('*')
+    .order('sorting_id')
 
   return (
     <>
