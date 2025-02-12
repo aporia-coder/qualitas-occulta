@@ -22,6 +22,11 @@ export default function Home() {
       target: AnchorTarget.BLANK,
     },
     {
+      title: 'visuals',
+      link: 'https://www.instagram.com/soul_qua_catacli?igsh=MTV1ZjA5N2N5ZGcxaA==',
+      target: AnchorTarget.BLANK,
+    },
+    {
       title: 'blog',
       link: '/blog',
     },
