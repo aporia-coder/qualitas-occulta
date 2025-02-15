@@ -10,7 +10,6 @@ const VideoPage = () => {
   return (
     <>
       <Navbar title="Video" />
-
       {videos.map((video) => (
         <Suspense fallback={<Loader />} key={video.url}>
           <MediaItem title={video.title} url={video.url} />
