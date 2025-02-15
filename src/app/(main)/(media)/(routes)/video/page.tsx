@@ -10,13 +10,12 @@ const VideoPage = () => {
   return (
     <>
       <Navbar title="Video" />
-      <section className="flex flex-col justify-start gap-20">
-        {videos.map((video) => (
-          <Suspense fallback={<Loader />} key={video.url}>
-            <MediaItem title={video.title} url={video.url} />
-          </Suspense>
-        ))}
-      </section>
+
+      {videos.map((video) => (
+        <Suspense fallback={<Loader />} key={video.url}>
+          <MediaItem title={video.title} url={video.url} />
+        </Suspense>
+      ))}
     </>
   )
 }
