@@ -1,8 +1,8 @@
 import ReactPlayer from 'react-player'
-import { MediaItemProps } from './types'
 import { MediaItemTitle } from '../MediaItemTitle'
+import { MusicItemProps } from './types'
 
-export const MediaItem = ({ url, title }: MediaItemProps) => {
+export const MusicItem = ({ url, title }: MusicItemProps) => {
   return (
     <div className="flex flex-col gap-6">
       <MediaItemTitle title={title} />

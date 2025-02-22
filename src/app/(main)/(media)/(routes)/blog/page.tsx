@@ -11,11 +11,9 @@ const BlogPage = async () => {
   return (
     <>
       <Navbar title="Blog" />
-      <section className="flex flex-col justify-start gap-20">
-        {blogPosts?.map((post) => {
-          return <BlogItem title={post.title} body={post.body} key={post.id} />
-        })}
-      </section>
+      {blogPosts?.map((post) => {
+        return <BlogItem title={post.title} body={post.body} key={post.id} />
+      })}
     </>
   )
 }
