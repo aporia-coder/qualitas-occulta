@@ -33,6 +33,57 @@ export type Database = {
         }
         Relationships: []
       }
+      MediaItem: {
+        Row: {
+          created_at: string
+          id: number
+          is_video: boolean | null
+          sorting_id: number
+          title: string | null
+          url: string
+        }
+        Insert: {
+          created_at?: string
+          id?: number
+          is_video?: boolean | null
+          sorting_id: number
+          title?: string | null
+          url: string
+        }
+        Update: {
+          created_at?: string
+          id?: number
+          is_video?: boolean | null
+          sorting_id?: number
+          title?: string | null
+          url?: string
+        }
+        Relationships: []
+      }
+      Video: {
+        Row: {
+          created_at: string
+          id: number
+          sorting_id: number
+          title: string
+          url: string
+        }
+        Insert: {
+          created_at?: string
+          id?: number
+          sorting_id: number
+          title: string
+          url: string
+        }
+        Update: {
+          created_at?: string
+          id?: number
+          sorting_id?: number
+          title?: string
+          url?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never

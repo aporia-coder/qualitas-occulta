@@ -1,18 +1,18 @@
-'use client'
-
 import Loader from '@/components/Loader'
-import { MediaItem } from '@/components/MediaItem'
+import { VideoItem } from '@/components/VideoItem'
 import { Navbar } from '@/components/Navbar'
-import { videos } from '@/utils'
+import { supabase } from '@/lib/supabaseApi'
 import { Suspense } from 'react'
 
-const VideoPage = () => {
+const VideoPage = async () => {
+  const { data: videos } = await supabase.from('Video').select('*')
+
   return (
     <>
       <Navbar title="Video" />
-      {videos.map((video) => (
+      {videos?.map((video) => (
         <Suspense fallback={<Loader />} key={video.url}>
-          <MediaItem title={video.title} url={video.url} />
+          <VideoItem title={video.title} url={video.url} />
         </Suspense>
       ))}
     </>

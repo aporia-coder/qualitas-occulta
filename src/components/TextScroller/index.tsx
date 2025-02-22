@@ -12,7 +12,7 @@ export const TextScroller = ({
   className,
 }: TextScrollerProps) => {
   return (
-    <div className={cn(className, 'fixed')}>
+    <div className={cn(className, 'fixed z-50')}>
       <Ticker duration={duration} direction={direction}>
         {items.map((item) => {
           return <ScrollerItem item={item} key={item} />

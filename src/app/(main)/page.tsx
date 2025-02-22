@@ -18,7 +18,7 @@ export default function Home() {
     },
     {
       title: 'art',
-      link: 'https://www.instagram.com/soul_qua_catacli?igsh=MTV1ZjA5N2N5ZGcxaA==',
+      link: 'https://www.instagram.com/soul_qua_catacli',
       target: AnchorTarget.BLANK,
     },
     {

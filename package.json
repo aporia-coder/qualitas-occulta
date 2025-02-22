@@ -12,7 +12,7 @@
     "tsc-check": "tsc --noEmit",
     "tsc-watch": "tsc --noEmit --watch",
     "format": "prettier --write './src/**/*.{js,jsx,ts,tsx}' --config ./.prettierrc",
-    "supabase": "supabase gen types typescript --project-id ofqrkzxetjfnqvcempsm > database.types.ts"
+    "codegen": "supabase gen types typescript --project-id ofqrkzxetjfnqvcempsm > database.types.ts"
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
@@ -22,6 +22,7 @@
     "@react-three/fiber": "^8.16.8",
     "@supabase/supabase-js": "^2.47.10",
     "@types/three": "^0.166.0",
+    "@vidstack/react": "^1.12.12",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.3.4",
