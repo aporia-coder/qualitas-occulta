@@ -17,6 +17,11 @@ export default function Home() {
       link: '/video',
     },
     {
+      title: 'software',
+      link: 'https://github.com/aporia-coder',
+      target: AnchorTarget.BLANK,
+    },
+    {
       title: 'art',
       link: 'https://www.instagram.com/soul_qua_catacli',
       target: AnchorTarget.BLANK,
