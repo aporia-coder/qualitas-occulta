@@ -11,7 +11,7 @@ export const Navbar = ({ title }: NavbarProps) => {
   const router = useRouter()
   const isOnHomepage = useIsOnHomepage()
 
-  const goBack = () => router.back()
+  const goBack = () => router.push('/')
 
   return (
     <nav className="flex items-center justify-between w-full mb-20">
